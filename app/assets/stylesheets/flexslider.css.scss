@@ -100,7 +100,7 @@ html[xmlns] .slides {display: block;}
 /* __________ Top Slider __________ */
 .flexslider.top_slider {
 	overflow:hidden;
-	background-image:url(../images/home_bg.jpg);
+	background-image:url('https://s3-us-west-1.amazonaws.com/photos.twobirdcapital.com/images/home_bg.jpg');
 	background-attachment:fixed;
 }
 .flexslider.top_slider .slides li,

@@ -12,5 +12,12 @@
 //
 //= require jquery
 //= require jquery_ujs
+//= require jquery-ui
 //= require bootstrap-sprockets
+//= require jquery.prettyPhoto
+//= require jquery.twitter
+//= require jquery.flexslider
+//= require owl.carousel
+//= require animate
+//= require myscript
 //= require_tree .

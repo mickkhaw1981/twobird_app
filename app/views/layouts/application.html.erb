@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
-  <head>
 
+  <head>
     <meta http-equiv="Content-Type" content="text/html" charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -18,11 +18,36 @@
     <%= csrf_meta_tags %>
     <%= render 'layouts/shim' %>
     <%= favicon_link_tag '' %>
-    
   </head>
+  
   <body>
 
-    <%= yield %>
+    <!-- PRELOADER -->
+    <div id="preloader"><img src="https://s3-us-west-1.amazonaws.com/photos.twobirdcapital.com/images/preloader.gif" alt="" />
+    </div>
+    <!-- //PRELOADER -->
+      
+    <!-- PAGE -->
+    <div id="page" class="front_page">
+      
+      <!-- PRELOADER HIDE -->
+      <div class="preloader_hide">
+      
+        <!-- PAGE BLOCK -->
+        <div class="page_block">
+
+          <%= render partial: 'layouts/navbar' %>
+            
+          <%= yield %>
+          
+          <%= render partial: 'layouts/footer' %>
+          
+        </div><!-- //PAGE BLOCK -->
+
+      </div><!-- //PRELOADER HIDE -->
+
+    </div><!-- //PAGE -->
 
   </body>
+
 </html>
