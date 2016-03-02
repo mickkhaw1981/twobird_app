@@ -1,14 +1,28 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>TwobirdApp</title>
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
-  <%= csrf_meta_tags %>
-</head>
-<body>
+  <head>
 
-<%= yield %>
+    <meta http-equiv="Content-Type" content="text/html" charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-</body>
+    <title>Two Bird Capital | <%= yield(:title) %></title>
+
+    <!-- CSS STYLES -->
+    <%= stylesheet_link_tag "application", media: "all", "data-turbolinks-track" => true %>
+    
+    <!-- FONTS -->
+    <link href='http://fonts.googleapis.com/css?family=Ubuntu:400,300,300italic,400italic,500,500italic,700,700italic' rel='stylesheet' type='text/css'>
+
+    <!-- SCRIPTS -->
+    <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+    <%= csrf_meta_tags %>
+    <%= render 'layouts/shim' %>
+    <%= favicon_link_tag '' %>
+    
+  </head>
+  <body>
+
+    <%= yield %>
+
+  </body>
 </html>
