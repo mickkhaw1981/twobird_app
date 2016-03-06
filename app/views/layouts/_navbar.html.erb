@@ -6,7 +6,7 @@
     <div class="container">
       <!-- LOGO -->
       <div class="logo">
-        <%= link_to image_tag("http://demo.b3themes.com/52_lookin/images/logo.png"), root_path, alt: "Two Bird Capital",class: "" %>
+        <%= link_to image_tag("https://s3-us-west-1.amazonaws.com/photos.twobirdcapital.com/images/dummylogo.png"), root_path, alt: "Two Bird Capital",class: "" %>
       </div><!-- LOGO -->
       <!-- RESPONSIVE BUTTON MENU -->
       <div class="navbar-header">
@@ -20,7 +20,9 @@
           <li class="sub-menu"><%= link_to "Services", services_path %></li>
           <li class="sub-menu"><%= link_to "Team", team_path %></li>
           <li class="sub-menu"><%= link_to "Transactions", transactions_path %></li>
-          <li class="sub-menu"><%= link_to "Advice", advice_and_resources_path %></li>
+          <li class="sub-menu">
+            <a href="https://500hats.com/" target="_blank">Advice</a>
+          </li>
           <li class="last"><%= link_to "Contact Us", contact_us_path %></li>
         </ul>
       </div>
