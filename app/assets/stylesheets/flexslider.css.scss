@@ -100,8 +100,9 @@ html[xmlns] .slides {display: block;}
 /* __________ Top Slider __________ */
 .flexslider.top_slider {
 	overflow:hidden;
-	background-image:url('https://s3-us-west-1.amazonaws.com/photos.twobirdcapital.com/images/home_bg.jpg');
+	background-image:url('https://s3-us-west-1.amazonaws.com/photos.twobirdcapital.com/images/jumbotron3.jpg');
 	background-attachment:fixed;
+	background-color: rgba(20,20,20,0.5); 
 }
 .flexslider.top_slider .slides li,
 .flexslider.top_slider .slides li .container {
@@ -146,15 +147,23 @@ html[xmlns] .slides {display: block;}
 
 
 .top_slider_btn {
+	border-radius: 0;
+    -webkit-transition: all 0.3s;
+       -moz-transition: all 0.3s;
+            transition: all 0.3s;
 	display:inline-block;
 	padding:18px 20px;
 	text-transform:uppercase;
 	line-height:20px;
 	font-size:19px;
-	color:#333;
-	background-color:#f8d8a9;
+	background: none;
+  color: #FFFFFF;
+  border-color: #FFFFFF;
+  border: 3px solid;
 }
-.top_slider_btn:hover {background-color:#333; color:#fff;}
+.top_slider_btn:hover {color: #5cc489;
+    background: #FFFFFF;
+    border-color: #FFFFFF;}
 
 
 .flexslider.top_slider .slides .top_slider_img1 {
